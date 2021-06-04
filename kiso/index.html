@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vue.js</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <p>{{ message }}</p>
+        <a v-bind:href="url" v-if="toggle">vue公式サイト</a>
+        <ol>
+            <li v-for="lang in languages">{{ lang }}</li>
+        </ol>
+        <button v-on:click="onclick">click!</button>
+        <input type="text" name="" id="" v-model="message">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
